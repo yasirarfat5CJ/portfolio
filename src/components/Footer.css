@@ -3,7 +3,7 @@
   color: #ccc;
   padding: 0.5rem 1rem;
   width: 100%;
-  position: fixed; /* fixed at bottom */
+  position: fixed;
   bottom: 0;
   left: 0;
   display: flex;
@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   z-index: 1000;
   font-size: 0.85rem;
-  height: 60px; /* consistent height */
+  height: 60px;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -44,16 +44,26 @@
   color: #fff;
 }
 
+/* ✅ Mobile Responsive */
 @media (max-width: 576px) {
   .footer {
     flex-direction: column;
     text-align: center;
-    padding: 0.7rem;
-    height: auto; /* allow expansion */
+    padding: 0.4rem 0.5rem;
+    height: auto;
   }
 
-  .footer .contact-info,
+  .footer > p {
+    display: none; /* Hide © line */
+  }
+
   .footer .social-icons {
-    margin-top: 0.4rem;
+    display: none; /* Hide icons */
+  }
+
+  .footer .contact-info {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.75rem;
   }
 }
