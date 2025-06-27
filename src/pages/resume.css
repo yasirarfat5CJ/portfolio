@@ -1,0 +1,72 @@
+.resume-page {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1d2671, #c33764);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 👈 changed from center to move up */
+  padding: 60px 20px 30px;     /* 👈 increased top padding */
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+}
+
+.resume-container {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 20px; /* 👈 optional small top margin for spacing */
+}
+
+.resume-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.resume-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.download-button {
+  margin-bottom: 30px;
+}
+
+.download-button a {
+  background-color: #ffc107;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.download-button a:hover {
+  background-color: #e0a800;
+}
+
+.resume-iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-title {
+    font-size: 2rem;
+  }
+
+  .resume-subtitle {
+    font-size: 1rem;
+  }
+
+  .resume-iframe {
+    height: 400px;
+  }
+}

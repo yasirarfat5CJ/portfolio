@@ -1,0 +1,48 @@
+/* Navbar.css */
+.navbar {
+  background-color: #111 !important;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffc107 !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* ✅ Transparent dropdown for mobile */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Glass effect */
+    padding: 1rem;
+    border-radius: 12px;
+    z-index: 999;
+    width: 220px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
