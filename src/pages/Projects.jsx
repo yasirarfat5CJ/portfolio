@@ -7,13 +7,13 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     title: 'Syllabus Management App',
-    description: 'A full-stack MERN app to manage college syllabus with role-based access.',
+    description: 'Developed a responsive Syllabus Management System using the MERN stack with role-based access control for students, faculty, and admins. Enabled secure CRUD operations, content segregation, and dynamic UI features based on user roles',
     github: 'https://github.com/yasirarfat5CJ/syl-frontend',
     demo: 'https://syl-frontend.netlify.app',
   },
   {
     title: 'Portfolio Website',
-    description: 'A modern developer portfolio built with React and Vite.',
+    description: 'Created a personal portfolio using React showcasing my projects, technical skills, and contact information. Integrated GitHub and LeetCode profiles for recruiters to view my work and coding activity',
     github: 'https://github.com/yasirarfat5CJ/portfolio',
     demo: 'https://tourmaline-biscuit-d3c4bc.netlify.app',
   },
