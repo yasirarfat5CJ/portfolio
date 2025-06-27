@@ -15,6 +15,12 @@ const projects = [
     title: 'Portfolio Website',
     description: 'A modern developer portfolio built with React and Vite.',
     github: 'https://github.com/yasirarfat5CJ/portfolio',
+    demo: 'https://tourmaline-biscuit-d3c4bc.netlify.app',
+  },
+   {
+    title: 'Airbnb Clone',
+    description: 'Built a full-stack Airbnb clone using the MERN stack, following MVC architecture for clean separation of concerns. Implemented robust error handling on both client and server sides to ensure smooth user experience and reliability.',
+    github: 'https://github.com/yasirarfat5CJ/Airbnb',
     demo: '',
   },
 ];
