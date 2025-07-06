@@ -12,16 +12,22 @@ const projects = [
     demo: 'https://syl-frontend.netlify.app',
   },
   {
-    title: 'Portfolio Website',
-    description: 'Created a personal portfolio using React showcasing my projects, technical skills, and contact information. Integrated GitHub and LeetCode profiles for recruiters to view my work and coding activity',
-    github: 'https://github.com/yasirarfat5CJ/portfolio',
-    demo: 'https://tourmaline-biscuit-d3c4bc.netlify.app',
+    title: 'Blog Platform with Admin Dashboard',
+    description: 'Blog Website built using MERN stack (MongoDB, Express, React, Node.js) with rich text editor, SEO-friendly URLs, and full CRUD functionality via an admin dashboard. Deployed on Vercel with MongoDB Atlas.',
+    github: 'https://github.com/yasirarfat5CJ/blog-website',
+    demo: 'https://blog-website-git-main-yasirs-projects-ec7e3437.vercel.app',
   },
    {
     title: 'Airbnb Clone',
     description: 'Built a full-stack Airbnb clone using the MERN stack, following MVC architecture for clean separation of concerns. Implemented robust error handling on both client and server sides to ensure smooth user experience and reliability.',
     github: 'https://github.com/yasirarfat5CJ/Airbnb',
     demo: '',
+  },
+   {
+    title: 'Portfolio Website',
+    description: 'Created a personal portfolio using React showcasing my projects, technical skills, and contact information. Integrated GitHub and LeetCode profiles for recruiters to view my work and coding activity',
+    github: 'https://github.com/yasirarfat5CJ/portfolio',
+    demo: 'https://tourmaline-biscuit-d3c4bc.netlify.app',
   },
 ];
 
