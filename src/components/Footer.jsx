@@ -5,7 +5,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer text-center">
-      <p>© {new Date().getFullYear()} Yasir Arfat. All rights reserved.</p>
+      <p> {new Date().getFullYear()} Yasir Arfat.</p>
 
       <div className="contact-info mt-2">
         <p><FaPhoneAlt className="me-2" /> +91 8125961792</p>
