@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // ✅ added
-import resumePDF from '../assets/ArfatResume.pdf'; // ✅ Make sure path is correct
+import resumePDF from '../assets/myresume1.pdf'; // ✅ Make sure path is correct
 import './resume.css';
 
 function Resume() {
