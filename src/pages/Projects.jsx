@@ -1,34 +1,32 @@
-
 import React from 'react';
 import './Projects.css';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
+// Add image key for each project
 const projects = [
   {
     title: 'Syllabus Management App',
+    image: '/images/syllabus.jpg',
     description: 'Developed a responsive Syllabus Management System using the MERN stack with role-based access control for students, faculty, and admins. Enabled secure CRUD operations, content segregation, and dynamic UI features based on user roles',
     github: 'https://github.com/yasirarfat5CJ/syl-frontend',
     demo: 'https://syllabus-management-system.netlify.app',
   },
   {
     title: 'Blog Platform with Admin Dashboard',
+    image: '/images/blog.jpg',
     description: 'Blog Website built using MERN stack (MongoDB, Express, React, Node.js) with rich text editor, SEO-friendly URLs, and full CRUD functionality via an admin dashboard. Deployed on Vercel with MongoDB Atlas.',
     github: 'https://github.com/yasirarfat5CJ/blog-website',
     demo: 'https://blog-website-git-main-yasirs-projects-ec7e3437.vercel.app',
   },
-   {
+  {
     title: 'Airbnb Clone',
+    image: '/images/airbnb.jpg',
     description: 'Built a full-stack Airbnb clone using the MERN stack, following MVC architecture for clean separation of concerns. Implemented robust error handling on both client and server sides to ensure smooth user experience and reliability.',
     github: 'https://github.com/yasirarfat5CJ/Airbnb',
     demo: '',
   },
-   {
-    title: 'Portfolio Website',
-    description: 'Created a personal portfolio using React showcasing my projects, technical skills, and contact information. Integrated GitHub and LeetCode profiles for recruiters to view my work and coding activity',
-    github: 'https://github.com/yasirarfat5CJ/portfolio',
-    demo: 'https://yasir-arfat-portfolio.netlify.app',
-  },
+ 
 ];
 
 function Projects() {
@@ -51,6 +49,15 @@ function Projects() {
               transition={{ duration: 0.3 }}
             >
               <div className="card project-card h-100">
+                {/* ✅ Project Image */}
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="card-img-top"
+                    style={{ height: '200px', objectFit: 'cover' }}
+                  />
+                )}
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text flex-grow-1">{project.description}</p>
@@ -64,7 +71,6 @@ function Projects() {
                       <FaGithub className="me-1" />
                       GitHub
                     </a>
-
                     {project.demo && (
                       <a
                         href={project.demo}

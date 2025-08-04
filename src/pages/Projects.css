@@ -4,7 +4,7 @@
   padding: 3rem 1rem;
   background: linear-gradient(to right, #1d2671, #c33764);
   color: #fff;
-  overflow-x: hidden; /* prevents horizontal scroll */
+  overflow-x: hidden;
 }
 
 .projects-container {
@@ -27,6 +27,15 @@
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .card-title {
@@ -65,4 +74,28 @@
 .btn-outline-success:hover {
   background-color: #28a745;
   color: #fff;
+}
+
+/* 🔽 Responsive styling for mobile */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-card img {
+    max-height: 180px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 4px 12px;
+    font-size: 0.9rem;
+  }
 }

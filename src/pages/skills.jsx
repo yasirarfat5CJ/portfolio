@@ -1,7 +1,17 @@
-
 import React from 'react';
 import './skills.css';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaLinux } from 'react-icons/fa';
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaGitAlt,
+  FaLinux,
+  FaCuttlefish,
+  FaProjectDiagram,
+} from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const skills = [
@@ -13,12 +23,14 @@ const skills = [
   { name: "MongoDB", icon: <FaDatabase />, color: "#4DB33D" },
   { name: "Git & GitHub", icon: <FaGitAlt />, color: "#f34f29" },
   { name: "Operating Systems", icon: <FaLinux />, color: "#333" },
+  { name: "C++", icon: <FaCuttlefish />, color: "#00599C" },
+  { name: "OOPS", icon: <FaProjectDiagram />, color: "#FF8C00" },
 ];
 
 function Skills() {
   return (
     <motion.div
-      className="skills-page "
+      className="skills-page"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}

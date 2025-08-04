@@ -56,7 +56,8 @@ function Contact() {
             {sent && <p className="success-msg">Message sent successfully!</p>}
           </form>
 
-          <div className="social-section">
+          {/* This section will be hidden on small screens */}
+          <div className="social-section hide-on-mobile">
             <h5>Connect with me:</h5>
             <div className="icons">
               <a href="https://github.com/yasirarfat5CJ" target="_blank" rel="noreferrer"><FaGithub /></a>

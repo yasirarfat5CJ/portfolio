@@ -40,7 +40,7 @@
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   color: #000;
-  max-height: 480px; /* Reduced height */
+  max-height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,6 +60,7 @@
   border: 1px solid #ccc;
   font-size: 0.95rem;
   background-color: #f9f9f9;
+  color: #000; /* ✅ Added this line */
   margin-bottom: 12px;
 }
 
@@ -106,6 +107,7 @@
   color: #ffeb3b;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
@@ -119,5 +121,11 @@
 
   .contact-title {
     font-size: 2rem;
+  }
+
+  /* Hide icons and copyright on small screens */
+  .footer-icons,
+  .footer-copy {
+    display: none;
   }
 }
