@@ -53,8 +53,8 @@ function About() {
           <h4 className="mb-3">🚀 What I Do</h4>
           <ul>
             <li>Build modern web applications with <strong>MongoDB, Express, React, and Node.js</strong></li>
-            <li>Design clean, interactive, and mobile-friendly <strong>UI/UX</strong></li>
-            <li>Experiment with <strong>AI & GenAI</strong> to make applications smarter</li>
+            <li>Exploring Technoligies like <strong>Artificial Intelligence & GenAI</strong></li>
+            <li>Focussed on solving <strong>DSA Problem</strong> to increase my problem solving skills</li>
           </ul>
         </div>
 
