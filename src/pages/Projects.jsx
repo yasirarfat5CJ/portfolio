@@ -5,6 +5,13 @@ import { motion } from 'framer-motion';
 
 // Add image key for each project
 const projects = [
+    {
+    title: 'Amazon clone',
+    image: '/images/amazon.jpg',
+    description: 'I built a fully responsive Amazon clone using HTML and CSS to replicate the look and feel of the Amazon e-commerce platform. The project includes a modern UI, navigation bar, product categories, product cards, and a structured footer similar to the original site. The design emphasizes layout structuring, responsiveness, and styling consistency.',
+    github: 'https://github.com/yasirarfat5CJ/Amazonclone',
+   
+  },
   {
     title: 'Syllabus Management App',
     image: '/images/syllabus.jpg',
@@ -22,10 +29,17 @@ const projects = [
   {
     title: 'Airbnb Clone',
     image: '/images/airbnb.jpg',
-    description: 'Built a full-stack Airbnb clone using the MERN stack, following MVC architecture for clean separation of concerns. Implemented robust error handling on both client and server sides to ensure smooth user experience and reliability.',
+    description: 'I built a full-stack Airbnb Clone using the MERN stack (MongoDB, Express.js, React.js, Node.js), following the MVC architecture to maintain a clean separation of concerns. The application includes core features such as property listings, booking functionality, and user authentication. I implemented robust error handling on both the client and server sides to ensure reliability and a smooth user experience. This project demonstrates my ability to design and develop scalable full-stack applications, manage structured codebases, and integrate frontend and backend seamlessly.',
     github: 'https://github.com/yasirarfat5CJ/Airbnb',
     demo: '',
   },
+   {
+    title: 'Netflix clone',
+    image: '/images/netflix.jpg',
+    description: 'I built a Netflix Clone using React.js and Firebase to replicate the core features and design of the popular streaming platform. The application includes a fully responsive user interface with a dynamic homepage showcasing banners and movie rows. I implemented Firebase Authentication to enable secure user signup and login functionality, ensuring a smooth authentication flow. The project highlights my skills in building scalable React components, integrating Firebase services, and creating modern, responsive web applications.',
+    github: 'https://github.com/yasirarfat5CJ/Netflix-clone',
+   
+  }
  
 ];
 
