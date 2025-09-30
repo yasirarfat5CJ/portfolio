@@ -39,6 +39,9 @@ function Navbar() {
             <Link className="nav-link" to="/projects" onClick={toggleNavbar}>Projects</Link>
           </li>
           <li className="nav-item">
+            <Link className="nav-link" to="/certifications" onClick={toggleNavbar}>Certifications</Link>
+          </li>
+          <li className="nav-item">
             <Link className="nav-link" to="/contact" onClick={toggleNavbar}>Contact</Link>
           </li>
         </ul>

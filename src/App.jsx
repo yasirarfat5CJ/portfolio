@@ -7,6 +7,7 @@ import Skills from './pages/skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Resume from './pages/resume';
+import Certifications from './pages/Certifications';
 import Footer from './components/Footer';
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
          <Route path="/contact" element={<Contact />} />
          <Route path="/resume" element={<Resume />} />
+         <Route path="/certifications" element={<Certifications />} />
 
 
       </Routes>

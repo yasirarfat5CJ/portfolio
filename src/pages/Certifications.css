@@ -1,0 +1,27 @@
+.certifications-page {
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  background: linear-gradient(to right, #1d2671, #c33764);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.page-title {
+  font-weight: 700;
+}
+
+.page-subtitle {
+  color: #6c757d;
+}
+
+.cert-card .card-title {
+  font-weight: 600;
+}
+
+.text-monospace {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
