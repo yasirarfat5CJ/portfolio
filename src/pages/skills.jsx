@@ -12,12 +12,14 @@ import {
   FaCuttlefish,
   FaProjectDiagram,
 } from 'react-icons/fa';
+import { SiPython, SiDocker } from 'react-icons/si';  // ✅ Added Python & Docker icons
 import { motion } from 'framer-motion';
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 />, color: "#e34c26" },
   { name: "CSS", icon: <FaCss3Alt />, color: "#264de4" },
   { name: "JavaScript", icon: <FaJs />, color: "#f0db4f" },
+  { name: "Python", icon: <SiPython />, color: "#3776AB" }, 
   { name: "React", icon: <FaReact />, color: "#61DBFB" },
   { name: "Node.js", icon: <FaNodeJs />, color: "#68a063" },
   { name: "MongoDB", icon: <FaDatabase />, color: "#4DB33D" },
@@ -25,6 +27,7 @@ const skills = [
   { name: "Operating Systems", icon: <FaLinux />, color: "#333" },
   { name: "C++", icon: <FaCuttlefish />, color: "#00599C" },
   { name: "OOPS", icon: <FaProjectDiagram />, color: "#FF8C00" },
+  { name: "Docker", icon: <SiDocker />, color: "#0db7ed" },   // ✅ Docker
 ];
 
 function Skills() {
@@ -41,7 +44,9 @@ function Skills() {
         <div className="skills-grid">
           {skills.map((skill, index) => (
             <div className="skill-card" key={index}>
-              <div className="icon" style={{ color: skill.color }}>{skill.icon}</div>
+              <div className="icon" style={{ color: skill.color }}>
+                {skill.icon}
+              </div>
               <h5>{skill.name}</h5>
             </div>
           ))}
