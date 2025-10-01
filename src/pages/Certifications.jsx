@@ -4,25 +4,25 @@ import './Certifications.css';
 function Certifications() {
   const certifications = [
     {
-      title: 'Sample Certification 1',
-      issuer: 'Issuer Name',
-      date: 'Jan 2024',
-      credentialId: 'ABC-123',
-      link: '#'
+      title: 'Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate',
+      issuer: 'Oracle',
+      date: 'sep 25',
+      credentialId: '',
+      link: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=33AEE00EC843E8A60430C4AB3C8830AB942621A779CE109E5D6498637A4D599D'
     },
     {
-      title: 'Sample Certification 2',
-      issuer: 'Issuer Name',
-      date: 'Jun 2023',
-      credentialId: 'XYZ-789',
-      link: '#'
+      title: 'Microsoft Certified: Azure AI Fundamentals',
+      issuer: 'Microsoft',
+      date: 'March 20, 2025',
+      credentialId: '',
+      link: 'https://www.credly.com/badges/fb57ca5a-3faa-4608-9bc9-26188030aba1'
     },
     {
-      title: 'Sample Certification 3',
-      issuer: 'Issuer Name',
-      date: 'Dec 2022',
-      credentialId: 'LMN-456',
-      link: '#'
+      title: 'SQL(Basics)',
+      issuer: 'Hackerrank',
+      date: 'Aug 2025',
+      credentialId: '',
+      link: 'https://www.hackerrank.com/certificates/iframe/e70165a290fc'
     }
   ];
 
