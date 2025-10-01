@@ -11,6 +11,10 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Create formData manually so we can append reply_to
+    const formData = new FormData(form.current);
+    formData.append("reply_to", formData.get("from_email")); // 👈 reply-to set to user's email
+
     emailjs
       .sendForm(
         'service_1234',            // ✅ your EmailJS service ID
