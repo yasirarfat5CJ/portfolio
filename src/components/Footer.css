@@ -32,6 +32,7 @@
 .footer .social-icons {
   display: flex;
   gap: 12px;
+  align-items: center;
 }
 
 .footer .social-icons a {
@@ -44,7 +45,22 @@
   color: #fff;
 }
 
-/* ✅ Mobile Responsive */
+/* ✅ GFG icon styling */
+.gfg-icon {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(42%) sepia(84%) saturate(441%) hue-rotate(86deg) brightness(92%) contrast(95%);
+  /* Makes the logo appear in GeeksforGeeks green */
+}
+
+.gfg-icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.1);
+}
+
+
 @media (max-width: 576px) {
   .footer {
     flex-direction: column;

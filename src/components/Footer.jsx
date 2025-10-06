@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaCode, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import './Footer.css';
-
+import gfgLogo from '../assets/GeeksforGeeks.svg'; 
 function Footer() {
   return (
     <footer className="footer text-center">
-      <p> {new Date().getFullYear()} Yasir Arfat.</p>
+      <p>{new Date().getFullYear()} Yasir Arfat.</p>
 
       <div className="contact-info mt-2">
         <p><FaPhoneAlt className="me-2" /> +91 8125961792</p>
@@ -22,9 +22,13 @@ function Footer() {
         <a href="https://leetcode.com/yasir_Arfat" target="_blank" rel="noreferrer">
           <FaCode />
         </a>
+        <a href="https://www.geeksforgeeks.org/user/yasirarppxg" target="_blank" rel="noreferrer">
+          <img src={gfgLogo} alt="GeeksforGeeks" className="gfg-icon" />
+        </a>
       </div>
     </footer>
   );
 }
 
 export default Footer;
+
