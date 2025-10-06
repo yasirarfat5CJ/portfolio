@@ -25,7 +25,7 @@ function Home() {
         <div className="typed-text mb-3">
           <Typewriter
             options={{
-              strings: ['Full Stack Developer', 'MERN Stack Enthusiast'],
+              strings: ['Software Engineer','Full Stack Developer', 'MERN Stack Enthusiast'],
               autoStart: true,
               loop: true,
               delay: 75,
