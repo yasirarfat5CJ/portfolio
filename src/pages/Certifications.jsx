@@ -30,7 +30,15 @@ function Certifications() {
       date: '',
       credentialId: '',
       link: 'https://drive.google.com/file/d/1M7Kvxs7gRcqGsj9pWIbXTsDCBndBLYKJ/view'
+    },
+     {
+      title: 'Introduction to Generative AI',
+      issuer: 'Google cloud',
+      date: 'oct 2025',
+      credentialId: '',
+      link: 'https://cdn.qwiklabs.com/VF6eQ1bV8SfqKBpu8AVD%2F4G93sg9wJQ0wWe9CTc%2FJ%2F4%3D'
     }
+
   ];
   
 

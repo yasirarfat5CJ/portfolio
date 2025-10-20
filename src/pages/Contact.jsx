@@ -11,25 +11,23 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Create formData manually so we can append reply_to
-    const formData = new FormData(form.current);
-    formData.append("reply_to", formData.get("from_email")); // 👈 reply-to set to user's email
-
     emailjs
       .sendForm(
-        'service_1234',            // ✅ your EmailJS service ID
-        'template_vg2r5sl',        // ✅ your template ID
+        'service_1234',       // your service ID
+        'template_vg2r5sl',   // your template ID
         form.current,
-        'Ww_E2yt1nKQuL96_G'        // ✅ your public key
+        'Ww_E2yt1nKQuL96_G'   // your public key
       )
       .then(
         (result) => {
-          console.log('Success:', result.text);
+          console.log('Email sent:', result.text);
           setSent(true);
           form.current.reset();
+          // Hide success message after 5 seconds
+          setTimeout(() => setSent(false), 5000);
         },
         (error) => {
-          console.error('Error:', error.text);
+          console.error(' Error:', error.text);
         }
       );
   };
@@ -51,7 +49,12 @@ function Contact() {
             <input type="text" name="from_name" placeholder="Your Name" required />
 
             <label>Email</label>
-            <input type="email" name="from_email" placeholder="Your Email" required />
+            <input
+              type="email"
+              name="reply_to"    // EmailJS uses this for reply-to
+              placeholder="Your Email"
+              required
+            />
 
             <label>Message</label>
             <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
@@ -60,7 +63,7 @@ function Contact() {
             {sent && <p className="success-msg">Message sent successfully!</p>}
           </form>
 
-          {/* This section will be hidden on small screens */}
+          {/* Social links (hidden on mobile) */}
           <div className="social-section hide-on-mobile">
             <h5>Connect with me:</h5>
             <div className="icons">
