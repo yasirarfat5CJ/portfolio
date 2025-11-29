@@ -29,7 +29,7 @@ const projects = [
   {
     title: 'Airbnb Clone',
     image: '/images/airbnb.jpg',
-    description: 'I built a full-stack Airbnb Clone using the MERN stack (MongoDB, Express.js, React.js, Node.js), following the MVC architecture to maintain a clean separation of concerns. The application includes core features such as property listings, booking functionality, and user authentication. I implemented robust error handling on both the client and server sides to ensure reliability and a smooth user experience. This project demonstrates my ability to design and develop scalable full-stack applications, manage structured codebases, and integrate frontend and backend seamlessly.',
+    description: 'I built a full-stack Airbnb Clone using  (MongoDB, Express.js,EJS, Node.js), following the MVC architecture to maintain a clean separation of concerns. The application includes core features such as property listings, booking functionality, and user authentication. I implemented robust error handling on both the client and server sides to ensure reliability and a smooth user experience. This project demonstrates my ability to design and develop scalable full-stack applications, manage structured codebases, and integrate frontend and backend seamlessly.',
     github: 'https://github.com/yasirarfat5CJ/Airbnb',
     demo: 'https://airbnb-3r57.onrender.com/listing',
   },
