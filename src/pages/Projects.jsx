@@ -39,7 +39,15 @@ const projects = [
     description: 'I built a Netflix Clone using React.js and Firebase to replicate the core features and design of the popular streaming platform. The application includes a fully responsive user interface with a dynamic homepage showcasing banners and movie rows. I implemented Firebase Authentication to enable secure user signup and login functionality, ensuring a smooth authentication flow. The project highlights my skills in building scalable React components, integrating Firebase services, and creating modern, responsive web applications.',
     github: 'https://github.com/yasirarfat5CJ/Netflix-clone',
    
+  },
+  {
+    title: 'Email/SMS Spam Detection',
+    image: '/images/spam.png',
+    description: 'Developed a machine learning–based spam detection application that classifies text messages as spam or legitimate. The project involved preprocessing text data (cleaning, stemming, stopword removal, TF-IDF vectorization), performing exploratory data analysis to identify patterns, and training classification models such as Multinomial Naive Bayes. The system was evaluated using accuracy, precision, recall, and F1-score, achieving reliable performance for real-world spam filtering use cases.',
+    github: 'https://github.com/yasirarfat5CJ/Machine-Learning/tree/main/ml-projects/spam-detection',
+   
   }
+
  
 ];
 
