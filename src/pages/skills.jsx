@@ -11,8 +11,10 @@ import {
   FaLinux,
   FaCuttlefish,
   FaProjectDiagram,
+  FaBrain,       
+  FaLanguage    
 } from 'react-icons/fa';
-import { SiPython, SiDocker } from 'react-icons/si';  // ✅ Added Python & Docker icons
+import { SiPython } from 'react-icons/si'; 
 import { motion } from 'framer-motion';
 
 const skills = [
@@ -27,7 +29,8 @@ const skills = [
   { name: "Operating Systems", icon: <FaLinux />, color: "#333" },
   { name: "C++", icon: <FaCuttlefish />, color: "#00599C" },
   { name: "OOPS", icon: <FaProjectDiagram />, color: "#FF8C00" },
-  { name: "Docker", icon: <SiDocker />, color: "#0db7ed" },   // ✅ Docker
+  { name: "Machine Learning", icon: <FaBrain />, color: "#ff007f" },
+  { name: "NLP (Natural Language Processing)", icon: <FaLanguage />, color: "#0088cc" },
 ];
 
 function Skills() {
