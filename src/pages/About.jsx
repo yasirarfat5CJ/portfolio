@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import { motion } from 'framer-motion';
-
+import myImage from '../assets/me.jpg';
 
 function About() {
   return (
@@ -19,9 +19,9 @@ function About() {
           {/* Image Section */}
           <div className="col-md-4 text-center mb-4">
             <img 
-               src="/images/me.jpg"
+               src={myImage}
               alt="Yasir Arfat" 
-              className="img-fluid rounded-circle shadow-lg about-img"
+              className="img-fluid  shadow-lg about-img"
             />
           </div>
 

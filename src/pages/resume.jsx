@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; //  added
-import resumePDF from '../assets/myresume2(3).pdf'; //  Make sure path is correct
+import resumePDF from '../assets/myresume.pdf'; //  Make sure path is correct
 import './resume.css';
 
 function Resume() {
@@ -15,8 +15,8 @@ function Resume() {
       <h2 className="text-center mb-4">My Resume</h2>
 
       <div className="text-center mb-4">
-        <a href={resumePDF} download className="btn btn-outline-primary">
-          Download Resume
+        <a href={resumePDF} className="btn btn-outline-primary">
+          view Resume
         </a>
       </div>
 
