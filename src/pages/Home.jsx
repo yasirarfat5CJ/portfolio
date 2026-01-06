@@ -1,6 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import profile from '../assets/portfolio.jpeg';
+import profile from '../assets/portfolio1.jpeg';
 import './Home.css';
 import { FaFileDownload, FaUserTie } from 'react-icons/fa';
 import { motion } from 'framer-motion';
