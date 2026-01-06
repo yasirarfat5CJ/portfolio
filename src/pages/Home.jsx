@@ -25,7 +25,7 @@ function Home() {
         <div className="typed-text mb-3">
           <Typewriter
             options={{
-              strings: ['Software Engineer','Full Stack Developer', 'MERN Stack Enthusiast'],
+              strings: ['Aspiring Software Engineer', 'MERN Stack Enthusiast,Generative-AI'],
               autoStart: true,
               loop: true,
               delay: 75,
@@ -45,7 +45,7 @@ function Home() {
           </a>
 
           <a
-            href="mailto:your@email.com"
+            href="mail to:yasir.arfat.cse@gmail.com"
             className="btn btn-outline-light"
           >
             <FaUserTie className="me-2" />

@@ -29,9 +29,10 @@ const skills = [
   { name: "Operating Systems", icon: <FaLinux />, color: "#333" },
   { name: "C++", icon: <FaCuttlefish />, color: "#00599C" },
   { name: "OOPS", icon: <FaProjectDiagram />, color: "#FF8C00" },
-  { name: "Machine Learning", icon: <FaBrain />, color: "#ff007f" },
   { name: "NLP (Natural Language Processing)", icon: <FaLanguage />, color: "#0088cc" },
+  { name: "Neural Networks", icon: <FaBrain />, color: "#9B59B6" },
 ];
+
 
 function Skills() {
   return (
