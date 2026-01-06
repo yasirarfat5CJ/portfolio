@@ -24,14 +24,14 @@ function Certifications() {
       credentialId: '',
       link: 'https://www.hackerrank.com/certificates/iframe/e70165a290fc'
     },
-     {
+    {
       title: 'Full stack development',
       issuer: 'Apna-college',
       date: '',
       credentialId: '',
       link: 'https://drive.google.com/file/d/1M7Kvxs7gRcqGsj9pWIbXTsDCBndBLYKJ/view'
     },
-     {
+    {
       title: 'Introduction to Generative AI',
       issuer: 'Google cloud',
       date: 'oct 2025',
@@ -40,10 +40,10 @@ function Certifications() {
     }
 
   ];
-  
+
 
   return (
-    <div className="certifications-page py-5 text-white mt-5 pt-5">
+    <div className="certifications-page py-5 text-white pt-5">
       <div className="container">
         <div className="row">
           <div className="col-12">

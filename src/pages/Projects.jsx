@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 
 // Add image key for each project
 const projects = [
-    {
+  {
     title: 'Amazon clone',
     image: '/images/amazon.jpg',
     description: 'I built a fully responsive Amazon clone using HTML and CSS to replicate the look and feel of the Amazon e-commerce platform. The project includes a modern UI, navigation bar, product categories, product cards, and a structured footer similar to the original site. The design emphasizes layout structuring, responsiveness, and styling consistency.',
     github: 'https://github.com/yasirarfat5CJ/Amazonclone',
-   
+
   },
   {
     title: 'Syllabus Management App',
@@ -33,28 +33,28 @@ const projects = [
     github: 'https://github.com/yasirarfat5CJ/Airbnb',
     demo: 'https://airbnb-3r57.onrender.com/listing',
   },
-   {
+  {
     title: 'Netflix clone',
     image: '/images/netflix.jpg',
     description: 'I built a Netflix Clone using React.js and Firebase to replicate the core features and design of the popular streaming platform. The application includes a fully responsive user interface with a dynamic homepage showcasing banners and movie rows. I implemented Firebase Authentication to enable secure user signup and login functionality, ensuring a smooth authentication flow. The project highlights my skills in building scalable React components, integrating Firebase services, and creating modern, responsive web applications.',
     github: 'https://github.com/yasirarfat5CJ/Netflix-clone',
-   
+
   },
   {
     title: 'Email/SMS Spam Detection',
     image: '/images/spam.png',
     description: 'Developed a machine learning–based spam detection application that classifies text messages as spam or legitimate. The project involved preprocessing text data (cleaning, stemming, stopword removal, TF-IDF vectorization), performing exploratory data analysis to identify patterns, and training classification models such as Multinomial Naive Bayes. The system was evaluated using accuracy, precision, recall, and F1-score, achieving reliable performance for real-world spam filtering use cases.',
     github: 'https://github.com/yasirarfat5CJ/Machine-Learning/tree/main/ml-projects/spam-detection',
-   
+
   }
 
- 
+
 ];
 
 function Projects() {
   return (
     <motion.div
-      className="projects-page py-5 text-white mt-5 pt-5"
+      className="projects-page py-5 text-white pt-5"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}

@@ -6,41 +6,40 @@ import myImage from '../assets/me.jpg';
 function About() {
   return (
     <motion.div
-      className="about-page py-5 text-white mt-5 pt-5"
+      className="about-page py-5 text-white pt-5"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
       <div className="about-container container">
-        <h2 className="text-center mb-4 fw-bold">About Me</h2>
-
         <div className="row align-items-center">
           {/* Image Section */}
           <div className="col-md-4 text-center mb-4">
-            <img 
-               src={myImage}
-              alt="Yasir Arfat" 
+            <img
+              src={myImage}
+              alt="Yasir Arfat"
               className="img-fluid  shadow-lg about-img"
             />
           </div>
 
           {/* Text Section */}
           <div className="col-md-8">
+            <h2 className="mb-4 fw-bold">About Me</h2>
             <p className="lead">
-              👋 Hi, I’m <strong>Yasir Arfat</strong>, a passionate 
-              <strong> Full Stack Developer</strong> who loves turning ideas 
-              into <strong>responsive, dynamic, and user-friendly web applications</strong> 
+              👋 Hi, I’m <strong>Yasir Arfat</strong>, a passionate
+              <strong> Full Stack Developer</strong> who loves turning ideas
+              into <strong>responsive, dynamic, and user-friendly web applications</strong>
               using the <strong>MERN stack</strong>.
             </p>
 
             <p>
-              I enjoy solving problems, designing smooth user experiences, 
-              and working across both the <strong>frontend</strong> and 
-              <strong> backend</strong> to build scalable solutions. Recently, 
-              I’ve been exploring the exciting world of 
-              <strong> Artificial Intelligence (AI)</strong> and 
-              <strong> Generative AI (GenAI)</strong>, and I’m eager to 
+              I enjoy solving problems, designing smooth user experiences,
+              and working across both the <strong>frontend</strong> and
+              <strong> backend</strong> to build scalable solutions. Recently,
+              I’ve been exploring the exciting world of
+              <strong> Artificial Intelligence (AI)</strong> and
+              <strong> Generative AI (GenAI)</strong>, and I’m eager to
               integrate these technologies into real-world projects.
             </p>
           </div>
@@ -62,7 +61,7 @@ function About() {
         <div className="mb-5">
           <h4 className="mb-3">🌟 Beyond Code</h4>
           <p>
-            I’m a curious learner who loves exploring new technologies, 
+            I’m a curious learner who loves exploring new technologies,
             brainstorming creative solutions, and continuously improving my craft.
           </p>
         </div>
@@ -88,7 +87,7 @@ function About() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.div >
   );
 }
 

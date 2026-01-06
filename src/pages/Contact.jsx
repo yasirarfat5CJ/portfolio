@@ -34,7 +34,7 @@ function Contact() {
 
   return (
     <motion.div
-      className="contact-page mt-5 pt-5"
+      className="contact-page pt-5"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
