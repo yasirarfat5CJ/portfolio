@@ -46,6 +46,13 @@ const projects = [
     description: 'Developed a machine learning–based spam detection application that classifies text messages as spam or legitimate. The project involved preprocessing text data (cleaning, stemming, stopword removal, TF-IDF vectorization), performing exploratory data analysis to identify patterns, and training classification models such as Multinomial Naive Bayes. The system was evaluated using accuracy, precision, recall, and F1-score, achieving reliable performance for real-world spam filtering use cases.',
     github: 'https://github.com/yasirarfat5CJ/Machine-Learning/tree/main/ml-projects/spam-detection',
 
+  },
+  {
+    title: 'Conversational PDF Question Answering System',
+    image: '/images/conversation.png',
+    description: 'Implemented a chat-based RAG system that enables users to upload PDFs and interactively query their contents. Utilized document chunking, vector search, and history-aware retrieval to deliver accurate, context-driven responses via a Streamlit interface.',
+    github: 'https://github.com/yasirarfat5CJ/Gen-AI/blob/main/projects/conversation-RAG-Q',
+    demo: 'https://conversation-rag-1.streamlit.app/',
   }
 
 
@@ -71,7 +78,7 @@ function Projects() {
               transition={{ duration: 0.3 }}
             >
               <div className="card project-card h-100">
-                {/* ✅ Project Image */}
+                {/* Project Image */}
                 {project.image && (
                   <img
                     src={project.image}
