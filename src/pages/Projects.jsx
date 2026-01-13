@@ -19,13 +19,7 @@ const projects = [
     github: 'https://github.com/yasirarfat5CJ/syl-frontend',
     demo: 'https://syllabus-management-system.netlify.app',
   },
-  {
-    title: 'Blog Platform with Admin Dashboard',
-    image: '/images/blog.jpg',
-    description: 'Blog Website built using MERN stack (MongoDB, Express, React, Node.js) with rich text editor, SEO-friendly URLs, and full CRUD functionality via an admin dashboard. Deployed on Vercel with MongoDB Atlas.',
-    github: 'https://github.com/yasirarfat5CJ/blog-website',
-    demo: 'https://blog-website-git-main-yasirs-projects-ec7e3437.vercel.app',
-  },
+
   {
     title: 'Airbnb Clone',
     image: '/images/airbnb.jpg',
