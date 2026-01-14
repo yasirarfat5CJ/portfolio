@@ -47,6 +47,13 @@ const projects = [
     description: 'Implemented a chat-based RAG system that enables users to upload PDFs and interactively query their contents. Utilized document chunking, vector search, and history-aware retrieval to deliver accurate, context-driven responses via a Streamlit interface.',
     github: 'https://github.com/yasirarfat5CJ/Gen-AI/blob/main/projects/conversation-RAG-Q',
     demo: 'https://conversation-rag-1.streamlit.app/',
+  },
+  {
+    title: 'AI Web Search Chatbot using LangChain & Groq',
+    image: '/images/chatbot.png',
+    description: 'Designed and implemented a web-based conversational AI application using LangChain’s LCEL architecture and Groq’s LLaMA 3.1 model. The system supports real-time token streaming, persistent chat state, and extensible tool integration (search, Wikipedia, Arxiv), while adhering to production-level security practices',
+    github: 'https://github.com/yasirarfat5CJ/Gen-AI/tree/main/projects/Search-engine-gen-ai',
+    demo: 'https://search-with-tools.streamlit.app/',
   }
 
 
