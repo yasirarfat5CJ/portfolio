@@ -42,19 +42,36 @@ const projects = [
 
   },
   {
-    title: 'Conversational PDF Question Answering System',
-    image: '/images/conversation.png',
-    description: 'Implemented a chat-based RAG system that enables users to upload PDFs and interactively query their contents. Utilized document chunking, vector search, and history-aware retrieval to deliver accurate, context-driven responses via a Streamlit interface.',
-    github: 'https://github.com/yasirarfat5CJ/Gen-AI/blob/main/projects/conversation-RAG-Q',
-    demo: 'https://conversation-rag-1.streamlit.app/',
-  },
+  title: 'Conversational PDF Q&A System using AWS Bedrock',
+  image: '/images/conversation.png',
+  description: 'Built and deployed a production-style Retrieval-Augmented Generation (RAG) system that allows users to upload PDFs and interactively query their content. Implemented document ingestion, recursive text chunking, FAISS-based vector search, and context-aware retrieval using Amazon Titan embeddings and LLaMA-3 via AWS Bedrock. The application is deployed on AWS EC2 with IAM role-based authentication and served through a Streamlit interface.',
+  github: 'https://github.com/yasirarfat5CJ/Gen-AI/tree/main/Aws-bedrock/Document-Q-and-A',
+  demo: 'http://13.222.163.23:8501'
+}
+,
   {
     title: 'AI Web Search Chatbot using LangChain & Groq',
     image: '/images/chatbot.png',
     description: 'Designed and implemented a web-based conversational AI application using LangChain’s LCEL architecture and Groq’s LLaMA 3.1 model. The system supports real-time token streaming, persistent chat state, and extensible tool integration (search, Wikipedia, Arxiv), while adhering to production-level security practices',
     github: 'https://github.com/yasirarfat5CJ/Gen-AI/tree/main/projects/Search-engine-gen-ai',
     demo: 'https://search-with-tools.streamlit.app/',
-  }
+  },
+  {
+  title: 'AI Math and Research Assistant using LangChain and Groq',
+  image: '/images/Math-Assistant.png',
+  description: 'Designed and implemented a web-based conversational AI assistant using LangChain’s ReAct agent architecture and Groq-hosted LLaMA 3.3 model. The application intelligently routes user queries to specialized tools including a calculator, logical reasoning chain, and Wikipedia search. It supports real-time token streaming, persistent chat state management, and a production-safe Streamlit interface, demonstrating practical GenAI system design and tool-augmented reasoning.',
+  github: 'https://github.com/yasirarfat5CJ/Gen-AI/tree/main/projects/Text-to-Math',
+  demo: 'https://problem-solver.streamlit.app',
+},
+{
+  title: 'AI URL & YouTube Content Summarizer using LangChain and Groq',
+  image: '/images/summarize.jpeg',
+  description: 'Developed a web-based AI summarization tool that extracts and summarizes content from YouTube videos and web articles using LangChain and Groq-hosted LLaMA 3.3. The application intelligently handles multiple content sources by fetching YouTube transcripts or scraping website text via Unstructured loaders, then generating concise summaries through a prompt-driven LLM pipeline. Built with Streamlit, the system features secure API key handling, input validation, real-time processing feedback, and a production-ready UI, demonstrating practical experience in LLM orchestration, content ingestion, and GenAI-powered knowledge summarization.',
+  github: 'https://github.com/yasirarfat5CJ/Gen-AI/tree/main/projects/Text-summarization',
+  demo: 'https://url-summarization.streamlit.app',
+}
+
+
 
 
 ];
