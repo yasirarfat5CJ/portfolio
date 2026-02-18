@@ -37,6 +37,13 @@ function Certifications() {
       date: 'oct 2025',
       credentialId: '',
       link: 'https://cdn.qwiklabs.com/VF6eQ1bV8SfqKBpu8AVD%2F4G93sg9wJQ0wWe9CTc%2FJ%2F4%3D'
+    },
+     {
+      title: 'Generative AI',
+      issuer: 'Udemy',
+      date: 'jan 2026',
+      credentialId: '',
+      link: 'https://www.udemy.com/certificate/UC-d0ba9d97-9679-43a2-8852-2ea1b5ea6a79'
     }
 
   ];
