@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -98,7 +98,23 @@ const cardVariants = {
   show: { opacity: 1, y: 0 },
 };
 
+const DESCRIPTION_PREVIEW_LENGTH = 190;
+
 function Projects() {
+  const [expandedCards, setExpandedCards] = useState({});
+
+  const toggleDescription = (cardKey) => {
+    setExpandedCards((prev) => ({ ...prev, [cardKey]: !prev[cardKey] }));
+  };
+
+  const getDescription = (text, expanded) => {
+    if (expanded || text.length <= DESCRIPTION_PREVIEW_LENGTH) {
+      return text;
+    }
+
+    return `${text.slice(0, DESCRIPTION_PREVIEW_LENGTH).trimEnd()}...`;
+  };
+
   return (
     <motion.div
       className="projects-page py-5 pt-5"
@@ -109,15 +125,23 @@ function Projects() {
     >
       <div className="projects-container px-4">
         <h2 className="text-center mb-4">My Projects</h2>
+        <p className="projects-subtitle text-center mb-4">
+          Production-minded projects across full-stack engineering and applied AI.
+        </p>
         <motion.div
           className="row"
           variants={containerVariants}
           initial="hidden"
           animate="show"
         >
-          {projects.map((project, index) => (
-            <motion.div
-              key={`${project.title}-${index}`}
+          {projects.map((project, index) => {
+            const cardKey = `${project.title}-${index}`;
+            const isExpanded = Boolean(expandedCards[cardKey]);
+            const canExpand = project.description.length > DESCRIPTION_PREVIEW_LENGTH;
+
+            return (
+            <motion.article
+              key={cardKey}
               className="col-md-6 col-lg-4 mb-4"
               variants={cardVariants}
               whileHover={{ y: -8, scale: 1.015 }}
@@ -126,20 +150,33 @@ function Projects() {
               <div className="card project-card h-100">
                 {/* Project Image */}
                 {project.image && (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="card-img-top"
-                    style={{ height: '200px', objectFit: 'cover' }}
-                  />
+                  <div className="card-img-wrap">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="card-img-top"
+                      style={{ height: '200px', objectFit: 'cover' }}
+                    />
+                  </div>
                 )}
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{project.title}</h5>
-                  <p className="card-text flex-grow-1">{project.description}</p>
-                  <div className="mt-3 d-flex gap-2">
+                  <p className="card-text flex-grow-1">
+                    {getDescription(project.description, isExpanded)}
+                  </p>
+                  {canExpand && (
+                    <button
+                      type="button"
+                      className="btn-show-more"
+                      onClick={() => toggleDescription(cardKey)}
+                    >
+                      {isExpanded ? 'Show less' : 'Read more'}
+                    </button>
+                  )}
+                  <div className="project-actions mt-3 d-flex gap-2">
                     <a
                       href={project.github}
-                      className="btn btn-outline-dark btn-sm"
+                      className="btn btn-github btn-sm"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -149,7 +186,7 @@ function Projects() {
                     {project.demo && (
                       <a
                         href={project.demo}
-                        className="btn btn-outline-info btn-sm"
+                        className="btn btn-live btn-sm"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -160,8 +197,9 @@ function Projects() {
                   </div>
                 </div>
               </div>
-            </motion.div>
-          ))}
+            </motion.article>
+            );
+          })}
         </motion.div>
       </div>
     </motion.div>

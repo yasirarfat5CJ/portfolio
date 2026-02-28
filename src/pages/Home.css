@@ -5,6 +5,12 @@
   position: relative;
   overflow: hidden;
   color: var(--text-100);
+  --home-shell-bg: rgba(9, 21, 42, 0.72);
+  --home-shell-border: rgba(188, 230, 255, 0.18);
+  --home-badge-bg: rgba(255, 255, 255, 0.08);
+  --home-badge-border: rgba(255, 255, 255, 0.24);
+  --home-pill-bg: rgba(255, 255, 255, 0.1);
+  --home-pill-border: rgba(255, 255, 255, 0.24);
 }
 
 .hero-section::before,
@@ -37,6 +43,14 @@
 .hero-content {
   position: relative;
   z-index: 1;
+  width: min(920px, 100%);
+  margin: 0 auto;
+  padding: clamp(1rem, 2.4vw, 2rem);
+  border-radius: 22px;
+  border: 1px solid var(--home-shell-border);
+  background: var(--home-shell-bg);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(8px);
 }
 
 .hero-badge {
@@ -44,8 +58,8 @@
   margin-bottom: 0.75rem;
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--home-badge-border);
+  background: var(--home-badge-bg);
   color: var(--text-300);
   font-size: 0.82rem;
   letter-spacing: 0.4px;
@@ -97,9 +111,18 @@
   padding: 0.38rem 0.75rem;
   font-size: 0.82rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: var(--home-pill-bg);
+  border: 1px solid var(--home-pill-border);
   color: var(--text-100);
+}
+
+body[data-theme='light'] .hero-section {
+  --home-shell-bg: rgba(255, 255, 255, 0.9);
+  --home-shell-border: rgba(15, 23, 42, 0.14);
+  --home-badge-bg: rgba(15, 23, 42, 0.06);
+  --home-badge-border: rgba(15, 23, 42, 0.2);
+  --home-pill-bg: rgba(15, 23, 42, 0.06);
+  --home-pill-border: rgba(15, 23, 42, 0.2);
 }
 
 body[data-theme='light'] .hero-btn.btn-outline-light {

@@ -21,9 +21,13 @@ function ScrollToSection() {
     const section = document.getElementById(sectionId);
 
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const navOffset = 82;
+      const sectionTop = section.getBoundingClientRect().top + window.scrollY - navOffset;
+
+      // Avoid long smooth-scroll animations that can feel "stuck" on repeated route changes.
+      window.scrollTo({ top: Math.max(0, sectionTop), behavior: 'auto' });
     }
-  }, [location]);
+  }, [location.pathname]);
 
   return null;
 }

@@ -5,16 +5,27 @@
   justify-content: center;
   align-items: center;
   padding: 5.7rem 1rem 2.4rem;
+  --contact-shell-bg: rgba(9, 21, 42, 0.88);
+  --contact-shell-border: rgba(187, 230, 255, 0.2);
+  --contact-shell-text: #eef7ff;
+  --contact-form-bg: #f7fbff;
+  --contact-form-text: #091425;
+  --contact-input-bg: #ffffff;
+  --contact-input-border: #ccd5e5;
+  --contact-input-text: #0b1a31;
+  --contact-icon-color: #eef7ff;
+  --contact-icon-border: rgba(255, 255, 255, 0.22);
+  --contact-icon-bg-hover: rgba(255, 255, 255, 0.18);
 }
 
 .contact-container {
   max-width: 980px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--contact-shell-bg);
+  border: 1px solid var(--contact-shell-border);
   border-radius: 20px;
   padding: clamp(1rem, 2.3vw, 1.8rem);
-  color: #fff;
+  color: var(--contact-shell-text) !important;
   box-shadow: var(--shadow-lg);
 }
 
@@ -43,10 +54,10 @@ body[data-theme='light'] .contact-page h6 {
 
 .contact-form {
   flex: 1 1 380px;
-  background: #f7fbff;
+  background: var(--contact-form-bg);
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  color: #091425;
+  color: var(--contact-form-text);
   padding: 1rem 1rem 1.2rem;
   display: flex;
   flex-direction: column;
@@ -62,10 +73,10 @@ body[data-theme='light'] .contact-page h6 {
   width: 100%;
   padding: 0.64rem 0.75rem;
   border-radius: 8px;
-  border: 1px solid #ccd5e5;
+  border: 1px solid var(--contact-input-border);
   font-size: 0.95rem;
-  background-color: #fff;
-  color: #0b1a31;
+  background-color: var(--contact-input-bg);
+  color: var(--contact-input-text);
   margin-bottom: 0.34rem;
 }
 
@@ -130,8 +141,8 @@ body[data-theme='light'] .contact-page h6 {
   height: 44px;
   border-radius: 50%;
   margin: 0 0.24rem;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--contact-icon-color);
+  border: 1px solid var(--contact-icon-border);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -140,12 +151,24 @@ body[data-theme='light'] .contact-page h6 {
 
 .icons a:hover {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.18);
+  background: var(--contact-icon-bg-hover);
+}
+
+body[data-theme='light'] .contact-page {
+  --contact-shell-bg: rgba(255, 255, 255, 0.9);
+  --contact-shell-border: rgba(15, 23, 42, 0.14);
+  --contact-shell-text: #0f172a;
+  --contact-form-bg: #f7fbff;
+  --contact-form-text: #091425;
+  --contact-input-bg: #ffffff;
+  --contact-input-border: #ccd5e5;
+  --contact-input-text: #0b1a31;
+  --contact-icon-color: #0f172a;
+  --contact-icon-border: rgba(15, 23, 42, 0.28);
+  --contact-icon-bg-hover: rgba(15, 23, 42, 0.14);
 }
 
 body[data-theme='light'] .icons a {
-  color: #0f172a;
-  border-color: rgba(15, 23, 42, 0.28);
   background: rgba(15, 23, 42, 0.06);
 }
 

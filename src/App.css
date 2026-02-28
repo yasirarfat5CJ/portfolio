@@ -29,6 +29,7 @@
   position: relative;
   width: 100%;
   isolation: isolate;
+  scroll-margin-top: 82px;
 }
 
 .app-main section::before {
@@ -45,6 +46,7 @@
 
 @media (max-width: 768px) {
   .app-main section {
+    scroll-margin-top: 74px;
     padding-bottom: 26px;
   }
 }
