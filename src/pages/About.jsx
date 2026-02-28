@@ -31,48 +31,59 @@ function About() {
           </motion.div>
 
           {/* Text Section */}
-          <motion.div
-            className="col-md-8"
-            initial={{ opacity: 0, x: 24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <h2 className="mb-4 fw-bold">About Me</h2>
-            <p className="lead">
-              Hi, I’m <strong>Yasir Arfat</strong>, a passionate
-              <strong> Full Stack Developer</strong> who loves turning ideas
-              into <strong>responsive, dynamic, and user-friendly web applications</strong>
-              using the <strong>MERN stack</strong>.
-            </p>
+         <motion.div
+  className="col-md-8"
+  initial={{ opacity: 0, x: 24 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true, amount: 0.3 }}
+>
+  <h2 className="mb-4 fw-bold">About Me</h2>
 
-            <p>
-              I enjoy solving problems, designing smooth user experiences,
-              and working across both the <strong>frontend</strong> and
-              <strong> backend</strong> to build scalable solutions. Recently,
-              I’ve been exploring the exciting world of
-              <strong> Artificial Intelligence (AI)</strong> and
-              <strong> Generative AI (GenAI)</strong>, and I’m eager to
-              integrate these technologies into real-world projects.
-            </p>
-          </motion.div>
+  <p className="lead">
+    Hi, I’m <strong>Yasir Arfat</strong>, a 
+    <strong> Full Stack Developer</strong> specializing in the 
+    <strong> MERN stack</strong> and <strong>Generative AI</strong>.
+  </p>
+
+  <p>
+    I build scalable, responsive web applications with clean architecture 
+    and intuitive user experiences. I enjoy solving real-world problems 
+    and turning ideas into impactful digital products.
+  </p>
+
+  <p>
+    After mastering MERN and GenAI fundamentals, I’m now exploring advanced 
+    AI tools and modern development workflows to build smarter, high-performance solutions.
+  </p>
+</motion.div>
         </div>
 
         <hr className="bg-light my-4" />
 
         {/* What I Do */}
-        <motion.div
-          className="mb-5 about-card"
-          initial={{ opacity: 0, y: 26 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
-        >
-          <h4 className="mb-3">What I Do</h4>
-          <ul>
-            <li>Build modern web applications with <strong>MongoDB, Express, React, and Node.js</strong></li>
-            <li>Exploring Technoligies like <strong>Artificial Intelligence & GenAI</strong></li>
-            <li>Focussed on solving <strong>DSA Problem</strong> to increase my problem solving skills</li>
-          </ul>
-        </motion.div>
+        {/* What I Do */}
+<motion.div
+  className="mb-5 about-card"
+  initial={{ opacity: 0, y: 26 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, amount: 0.25 }}
+>
+  <h4 className="mb-3">What I Do</h4>
+  <ul>
+    <li>
+      Develop scalable, full-stack web applications using 
+      <strong> MongoDB, Express.js, React, and Node.js</strong>.
+    </li>
+    <li>
+      Build and integrate <strong>AI-powered features</strong> using 
+      <strong> Generative AI tools and modern AI frameworks</strong>.
+    </li>
+    <li>
+      Continuously strengthen my <strong>Data Structures & Algorithms</strong> 
+      skills to write optimized and efficient code.
+    </li>
+  </ul>
+</motion.div>
 
         {/* Beyond Code */}
         <motion.div
