@@ -16,6 +16,7 @@ import {
 } from 'react-icons/fa';
 import { SiPython } from 'react-icons/si'; 
 import { motion } from 'framer-motion';
+const _MOTION = motion;
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 />, color: "#e34c26" },
@@ -33,6 +34,20 @@ const skills = [
   { name: "Neural Networks", icon: <FaBrain />, color: "#9B59B6" },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.06,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 14 },
+  show: { opacity: 1, y: 0 },
+};
 
 function Skills() {
   return (
@@ -45,16 +60,28 @@ function Skills() {
     >
       <div className="skills-container mt-5 pt-5">
         <h2 className="text-center mb-4">My Skills</h2>
-        <div className="skills-grid">
+        <motion.div
+          className="skills-grid"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {skills.map((skill, index) => (
-            <div className="skill-card" key={index}>
+            <motion.div
+              className="skill-card"
+              key={index}
+              variants={itemVariants}
+              whileHover={{ y: -6, scale: 1.02 }}
+              transition={{ type: 'spring', stiffness: 200, damping: 18 }}
+            >
               <div className="icon" style={{ color: skill.color }}>
                 {skill.icon}
               </div>
               <h5>{skill.name}</h5>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

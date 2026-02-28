@@ -1,101 +1,95 @@
 .projects-page {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
-  padding: 3rem 1rem;
-  background: linear-gradient(to right, #141e30, #243b55);
-  color: #fff;
-  overflow-x: hidden;
+  padding: 5.8rem 0.5rem 3rem;
+  color: var(--text-100);
 }
 
 .projects-container {
-  max-width: 100%;
+  max-width: 1180px;
   width: 100%;
-  margin: 0;
-  padding: 0 1rem;
+  margin: 0 auto;
 }
 
 .project-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-  padding: 1.5rem;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  height: 100%;
-  color: #222;
-}
-
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  box-shadow: var(--shadow-lg);
+  color: #111111;
+  overflow: hidden;
 }
 
 .project-card img {
   width: 100%;
-  height: auto;
-  max-height: 250px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+}
+
+.project-card .card-body {
+  padding: 1rem;
 }
 
 .card-title {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 0.75rem;
-  color: #111;
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: #111111;
 }
 
 .card-text {
-  color: #444;
-  font-size: 1rem;
+  color: #111111;
+  font-size: 0.93rem;
 }
 
-.btn {
-  border-radius: 30px;
-  padding: 6px 16px;
-  font-weight: 500;
+.project-card .btn {
+  border-radius: 999px;
+  padding: 0.34rem 0.82rem;
+  font-weight: 600;
 }
 
-.btn-outline-light {
-  color: #333;
-  border-color: #333;
+.project-card .btn-outline-dark {
+  border-color: rgba(17, 24, 39, 0.45);
+  color: #111827;
 }
 
-.btn-outline-light:hover {
-  background-color: #333;
-  color: #fff;
+.project-card .btn-outline-dark:hover {
+  border-color: #21d4fd;
+  background: #21d4fd;
+  color: #041123;
 }
 
-.btn-outline-success {
-  border-color: #28a745;
-  color: #28a745;
+.project-card .btn-outline-info {
+  border-color: #0c8cb4;
+  color: #0b4c66;
 }
 
-.btn-outline-success:hover {
-  background-color: #28a745;
-  color: #fff;
+.project-card .btn-outline-info:hover {
+  background: #77dfff;
+  color: #062031;
 }
 
-/* 🔽 Responsive styling for mobile */
+.btn-show-more {
+  margin-top: 0.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #f8fbff;
+  padding: 0.5rem 1.3rem;
+  background: rgba(8, 22, 43, 0.28);
+}
+
+.btn-show-more:hover {
+  border-color: #21d4fd;
+  color: #062031;
+  background: #21d4fd;
+}
+
+body[data-theme='light'] .projects-page .text-center {
+  color: #0f172a;
+}
+
 @media (max-width: 768px) {
-  .project-card {
-    padding: 1rem;
-  }
-
   .project-card img {
-    max-height: 180px;
-  }
-
-  .card-title {
-    font-size: 1.1rem;
-  }
-
-  .card-text {
-    font-size: 0.95rem;
-  }
-
-  .btn {
-    padding: 4px 12px;
-    font-size: 0.9rem;
+    height: 180px;
   }
 }

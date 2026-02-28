@@ -1,5 +1,7 @@
 import React from 'react';
 import './Certifications.css';
+import { motion } from 'framer-motion';
+const _MOTION = motion;
 
 function Certifications() {
   const certifications = [
@@ -50,7 +52,12 @@ function Certifications() {
 
 
   return (
-    <div className="certifications-page py-5 text-white pt-5">
+    <motion.div
+      className="certifications-page py-5 pt-5"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -61,7 +68,15 @@ function Certifications() {
 
         <div className="row g-4">
           {certifications.map((cert, index) => (
-            <div className="col-12 col-md-6 col-lg-4" key={index}>
+            <motion.div
+              className="col-12 col-md-6 col-lg-4"
+              key={index}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ delay: index * 0.05 }}
+              whileHover={{ y: -6 }}
+            >
               <div className="card cert-card h-100 shadow-sm">
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{cert.title}</h5>
@@ -75,11 +90,11 @@ function Certifications() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

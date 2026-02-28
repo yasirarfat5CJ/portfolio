@@ -2,6 +2,7 @@ import React from 'react';
 import './Projects.css';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+const _MOTION = motion;
 
 // Add image key for each project
 const projects = [
@@ -82,10 +83,25 @@ const projects = [
 
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 16 },
+  show: { opacity: 1, y: 0 },
+};
+
 function Projects() {
   return (
     <motion.div
-      className="projects-page py-5 text-white pt-5"
+      className="projects-page py-5 pt-5"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
@@ -93,13 +109,19 @@ function Projects() {
     >
       <div className="projects-container px-4">
         <h2 className="text-center mb-4">My Projects</h2>
-        <div className="row">
+        <motion.div
+          className="row"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+        >
           {projects.map((project, index) => (
             <motion.div
-              key={index}
+              key={`${project.title}-${index}`}
               className="col-md-6 col-lg-4 mb-4"
-              whileHover={{ scale: 1.03 }}
-              transition={{ duration: 0.3 }}
+              variants={cardVariants}
+              whileHover={{ y: -8, scale: 1.015 }}
+              transition={{ type: 'spring', stiffness: 210, damping: 18 }}
             >
               <div className="card project-card h-100">
                 {/* Project Image */}
@@ -127,7 +149,7 @@ function Projects() {
                     {project.demo && (
                       <a
                         href={project.demo}
-                        className="btn btn-outline-success btn-sm"
+                        className="btn btn-outline-info btn-sm"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -140,7 +162,7 @@ function Projects() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

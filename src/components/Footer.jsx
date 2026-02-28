@@ -2,9 +2,18 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaCode, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import './Footer.css';
 import gfgLogo from '../assets/GeeksforGeeks.svg'; 
+import { motion } from 'framer-motion';
+const _MOTION = motion;
+
 function Footer() {
   return (
-    <footer className="footer text-center">
+    <motion.footer
+      className="footer text-center"
+      initial={{ opacity: 0, y: 12 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.4 }}
+    >
       <p>{new Date().getFullYear()} Yasir Arfat.</p>
 
       <div className="contact-info mt-2">
@@ -26,7 +35,7 @@ function Footer() {
           <img src={gfgLogo} alt="GeeksforGeeks" className="gfg-icon" />
         </a>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
 

@@ -1,27 +1,68 @@
 .certifications-page {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
-  padding-top: 6rem;
+  padding-top: 5.8rem;
   padding-bottom: 3rem;
-  background: linear-gradient(to right, #141e30, #243b55);
-  color: #fff;
-  overflow-x: hidden;
 }
 
 .page-title {
   font-weight: 700;
+  color: #f6fbff;
 }
 
 .page-subtitle {
-  color: #6c757d;
+  color: var(--text-300);
+}
+
+.cert-card {
+  background: rgba(12, 23, 45, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  color: #ebf4ff;
+  box-shadow: var(--shadow-lg);
 }
 
 .cert-card .card-title {
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.cert-card .card-subtitle,
+.cert-card .small {
+  color: #b7c4d8 !important;
+}
+
+.cert-card .btn-outline-primary {
+  border-radius: 999px;
+  border-color: #7dd9ff;
+  color: #b8ebff;
+}
+
+.cert-card .btn-outline-primary:hover {
+  background: #7dd9ff;
+  color: #041525;
+  border-color: #7dd9ff;
 }
 
 .text-monospace {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 
+body[data-theme='light'] .certifications-page h1,
+body[data-theme='light'] .certifications-page h2,
+body[data-theme='light'] .certifications-page h3,
+body[data-theme='light'] .certifications-page h4,
+body[data-theme='light'] .certifications-page h5,
+body[data-theme='light'] .certifications-page h6 {
+  color: #0f172a !important;
+}
 
+body[data-theme='light'] .cert-card .btn-outline-primary {
+  border-color: #0f172a;
+  color: #0f172a;
+}
+
+body[data-theme='light'] .cert-card .btn-outline-primary:hover {
+  background: #0f172a;
+  border-color: #0f172a;
+  color: #ffffff;
+}

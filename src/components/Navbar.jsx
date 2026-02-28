@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
+import { FaMoon, FaSun } from 'react-icons/fa';
 
-function Navbar() {
+function Navbar({ theme, onToggleTheme }) {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const toggleNavbar = () => {
     setIsCollapsed(!isCollapsed);
   };
 
+  const closeNavbar = () => {
+    setIsCollapsed(true);
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-4">
+    <nav className="navbar navbar-expand-lg fixed-top px-4">
       <Link className="navbar-brand" to="/">Portfolio</Link>
 
       <button
@@ -27,22 +32,32 @@ function Navbar() {
       <div className={`collapse navbar-collapse ${!isCollapsed ? 'show' : ''}`} id="navbarNav">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-            <Link className="nav-link" to="/" onClick={toggleNavbar}>Home</Link>
+            <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/" onClick={closeNavbar}>Home</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/about" onClick={toggleNavbar}>About</Link>
+            <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/about" onClick={closeNavbar}>About</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/skills" onClick={toggleNavbar}>Skills</Link>
+            <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/skills" onClick={closeNavbar}>Skills</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/projects" onClick={toggleNavbar}>Projects</Link>
+            <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/projects" onClick={closeNavbar}>Projects</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/certifications" onClick={toggleNavbar}>Certifications</Link>
+            <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/certifications" onClick={closeNavbar}>Certifications</NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/contact" onClick={toggleNavbar}>Contact</Link>
+            <NavLink className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} to="/contact" onClick={closeNavbar}>Contact</NavLink>
+          </li>
+          <li className="nav-item d-flex align-items-center ms-lg-2">
+            <button
+              type="button"
+              className="theme-toggle-btn"
+              onClick={onToggleTheme}
+              aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {theme === 'dark' ? <FaSun /> : <FaMoon />}
+            </button>
           </li>
         </ul>
       </div>
