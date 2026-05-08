@@ -11,18 +11,21 @@ import {
   FaLinux,
   FaCuttlefish,
   FaProjectDiagram,
-  FaBrain,       
-  FaLanguage    
+  FaBrain,
+  FaLanguage,
+  FaJava
 } from 'react-icons/fa';
-import { SiPython } from 'react-icons/si'; 
+import { SiPython } from 'react-icons/si';
 import { motion } from 'framer-motion';
+
 const _MOTION = motion;
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 />, color: "#e34c26" },
   { name: "CSS", icon: <FaCss3Alt />, color: "#264de4" },
   { name: "JavaScript", icon: <FaJs />, color: "#f0db4f" },
-  { name: "Python", icon: <SiPython />, color: "#3776AB" }, 
+  { name: "Java", icon: <FaJava />, color: "#f89820" },
+  { name: "Python", icon: <SiPython />, color: "#3776AB" },
   { name: "React", icon: <FaReact />, color: "#61DBFB" },
   { name: "Node.js", icon: <FaNodeJs />, color: "#68a063" },
   { name: "MongoDB", icon: <FaDatabase />, color: "#4DB33D" },
@@ -60,6 +63,7 @@ function Skills() {
     >
       <div className="skills-container mt-5 pt-5">
         <h2 className="text-center mb-4">My Skills</h2>
+
         <motion.div
           className="skills-grid"
           variants={containerVariants}
@@ -78,6 +82,7 @@ function Skills() {
               <div className="icon" style={{ color: skill.color }}>
                 {skill.icon}
               </div>
+
               <h5>{skill.name}</h5>
             </motion.div>
           ))}
