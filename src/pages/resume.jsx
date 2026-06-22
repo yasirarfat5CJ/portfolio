@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 const _MOTION = motion;
 import { FaDownload, FaExternalLinkAlt } from 'react-icons/fa';
-import resumePDF from '../assets/resume.pdf';
+import resumePDF from '../assets/arfat_res.pdf';
 import './resume.css';
 
 function Resume() {

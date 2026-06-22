@@ -4,6 +4,7 @@ import profile from '../assets/portfolio1.jpeg';
 import './Home.css';
 import { FaFileDownload, FaUserTie } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import resumePDF from '../assets/arfat_res.pdf';
 const _MOTION = motion;
 
 function Home() {
@@ -52,7 +53,7 @@ function Home() {
           transition={{ delay: 0.3 }}
         >
           <a
-            href="/resume"
+            href={resumePDF}
             className="btn btn-outline-warning hero-btn"
             target="_blank"
             rel="noreferrer"
