@@ -47,7 +47,7 @@ const projects = [
   image: '/images/conversation.png',
   description: 'Built and deployed a production-style Retrieval-Augmented Generation (RAG) system that allows users to upload PDFs and interactively query their content. Implemented document ingestion, recursive text chunking, FAISS-based vector search, and context-aware retrieval using Amazon Titan embeddings and LLaMA-3 via AWS Bedrock. The application is deployed on AWS EC2 with IAM role-based authentication and served through a Streamlit interface.',
   github: 'https://github.com/yasirarfat5CJ/Gen-AI/tree/main/Aws-bedrock/Document-Q-and-A',
-  demo: 'http://13.222.163.23:8501'
+  demo: 'http://100.54.19.73:8501'
 }
 ,
   {
