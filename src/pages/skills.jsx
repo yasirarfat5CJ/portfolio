@@ -18,7 +18,9 @@ import {
 import { SiPython } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
+
 const _MOTION = motion;
+
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 />, color: "#e34c26" },
@@ -33,9 +35,11 @@ const skills = [
   { name: "Operating Systems", icon: <FaLinux />, color: "#333" },
   { name: "C++", icon: <FaCuttlefish />, color: "#00599C" },
   { name: "OOPS", icon: <FaProjectDiagram />, color: "#FF8C00" },
+  { name: "Machine Learning", icon: <FaBrain />, color: "#3498DB" },
   { name: "NLP (Natural Language Processing)", icon: <FaLanguage />, color: "#0088cc" },
   { name: "Neural Networks", icon: <FaBrain />, color: "#9B59B6" },
 ];
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -47,10 +51,12 @@ const containerVariants = {
   },
 };
 
+
 const itemVariants = {
   hidden: { opacity: 0, y: 14 },
   show: { opacity: 1, y: 0 },
 };
+
 
 function Skills() {
   return (
@@ -63,6 +69,7 @@ function Skills() {
     >
       <div className="skills-container mt-5 pt-5">
         <h2 className="text-center mb-4">My Skills</h2>
+
 
         <motion.div
           className="skills-grid"
@@ -83,6 +90,7 @@ function Skills() {
                 {skill.icon}
               </div>
 
+
               <h5>{skill.name}</h5>
             </motion.div>
           ))}
@@ -91,5 +99,6 @@ function Skills() {
     </motion.div>
   );
 }
+
 
 export default Skills;

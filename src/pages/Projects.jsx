@@ -73,7 +73,11 @@ const projects = [
 },
 {
   title: 'AI-Interview-prep Platform',
-  image: '/images/smartRecuit.jpeg',
+<<<<<<< Updated upstream
+  image: '/images/ai-interview-prep.png',
+=======
+  image: '/images/ai-interview-prep.png',
+>>>>>>> Stashed changes
   description: 'Smart Recruit AI is a full-stack intelligent hiring platform designed to automate early-stage recruitment workflows. The system allows candidates to upload resumes, which are parsed using AI to extract structured data and calculate ATS-style matching scores against job roles.The platform includes a real-time AI interview system powered by Gemini AI, where candidates undergo dynamic technical interviews with automated scoring and feedback. HR users can access analytics dashboards to evaluate candidate performance, rankings, and hiring recommendations.Key features include role-based authentication using JWT, protected routes, real-time socket communication, and responsive modern UI built with React and Tailwind CSS.',
   github: 'https://github.com/yasirarfat5CJ/Smart-Recuit-AI',
   demo: 'https://ai-interview-prepration.netlify.app',
