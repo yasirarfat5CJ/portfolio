@@ -77,6 +77,13 @@ const projects = [
   description: 'Smart Recruit AI is a full-stack intelligent hiring platform designed to automate early-stage recruitment workflows. The system allows candidates to upload resumes, which are parsed using AI to extract structured data and calculate ATS-style matching scores against job roles.The platform includes a real-time AI interview system powered by Gemini AI, where candidates undergo dynamic technical interviews with automated scoring and feedback. HR users can access analytics dashboards to evaluate candidate performance, rankings, and hiring recommendations.Key features include role-based authentication using JWT, protected routes, real-time socket communication, and responsive modern UI built with React and Tailwind CSS.',
   github: 'https://github.com/yasirarfat5CJ/Smart-Recuit-AI',
   demo: 'https://ai-interview-prepration.netlify.app',
+},
+{
+  title: 'Student Marks Prediction',
+  image: '/images/prediction.png',
+  description: 'Built an end-to-end ML system using 15,000 student records, applying NumPy, Pandas, and Scikit-learn for data preprocessing, feature engineering, and model training. Trained and compared four regression models: Linear Regression, Decision Tree, Random Forest,and Gradient Boosting, using cross-validation and hyperparameter tuning to achieve an R2 score of 0.857 with the final model.  Developed a FastAPI + MySQL backend using SQLAlchemy, JWT authentication, bcrypt, and RBAC, with a React dashboard supporting Explainable AI, What-If analysis, prediction history, personalized recommendations, and admin analytics.',
+  github: 'https://github.com/yasirarfat5CJ/student_marks_preduction',
+ 
 }
 
 
