@@ -4,7 +4,7 @@ import profile from '../assets/profile.jpg';
 import './Home.css';
 import { FaFileDownload, FaUserTie } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import resumePDF from '../assets/yasir_res.pdf';
+import resumePDF from '../assets/yasir_resume1.pdf';
 const _MOTION = motion;
 
 function Home() {
