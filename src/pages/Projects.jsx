@@ -84,6 +84,13 @@ const projects = [
   description: 'Built an end-to-end ML system using 15,000 student records, applying NumPy, Pandas, and Scikit-learn for data preprocessing, feature engineering, and model training. Trained and compared four regression models: Linear Regression, Decision Tree, Random Forest,and Gradient Boosting, using cross-validation and hyperparameter tuning to achieve an R2 score of 0.857 with the final model.  Developed a FastAPI + MySQL backend using SQLAlchemy, JWT authentication, bcrypt, and RBAC, with a React dashboard supporting Explainable AI, What-If analysis, prediction history, personalized recommendations, and admin analytics.',
   github: 'https://github.com/yasirarfat5CJ/student_marks_preduction',
  
+},
+{
+  title: 'AI-FDE Supply chain Logistics',
+  image: '/images/AI-FDE.png',
+  description:"Built an AI-powered supply chain intelligence platform using LangGraph, Python, SQL Server, Pinecone, Ollama, and Streamlit to query fleet telemetry and retrieve compliance information through natural-language interactions. item Developed secure agent tools for SQL telemetry queries, external weather data, and RAG-based SOP retrieval, using a read-only database user and curated SQL view to restrict AI access to enterprise data.",
+  github: 'https://github.com/yasirarfat5CJ/cold-chain-logistics-FDE-Project',
+ 
 }
 
 
