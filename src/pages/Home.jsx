@@ -4,7 +4,7 @@ import profile from '../assets/profile.jpeg';
 import './Home.css';
 import { FaFileDownload, FaUserTie } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import resumePDF from '../assets/yasir_resume.pdf';
+import resumePDF from '../assets/yasir_arfat.pdf';
 const _MOTION = motion;
 
 function Home() {
@@ -38,7 +38,7 @@ function Home() {
         <div className="typed-text mb-3">
           <Typewriter
             options={{
-              strings: ['Aspiring Software Engineer', 'MERN Stack Enthusiast,Generative-AI'],
+              strings: [' Software Engineer', 'Backend-Engineer','Generative-AI'],
               autoStart: true,
               loop: true,
               delay: 75,

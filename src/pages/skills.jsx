@@ -1,5 +1,6 @@
 import React from 'react';
 import './skills.css';
+import { FaWandMagicSparkles } from "react-icons/fa6";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -30,7 +31,6 @@ const skills = [
   { name: "Python", icon: <SiPython />, color: "#3776AB" },
   { name: "React", icon: <FaReact />, color: "#61DBFB" },
   { name: "Node.js", icon: <FaNodeJs />, color: "#68a063" },
-  { name: "MongoDB", icon: <FaDatabase />, color: "#4DB33D" },
   { name: "Git & GitHub", icon: <FaGitAlt />, color: "#f34f29" },
   { name: "Operating Systems", icon: <FaLinux />, color: "#333" },
   { name: "C++", icon: <FaCuttlefish />, color: "#00599C" },
@@ -38,6 +38,7 @@ const skills = [
   { name: "Machine Learning", icon: <FaBrain />, color: "#3498DB" },
   { name: "NLP (Natural Language Processing)", icon: <FaLanguage />, color: "#0088cc" },
   { name: "Neural Networks", icon: <FaBrain />, color: "#9B59B6" },
+  { name: "Generative AI", icon: <FaWandMagicSparkles />, color: "#8E44AD" },
 ];
 
 
